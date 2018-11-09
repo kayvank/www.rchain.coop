@@ -1,0 +1,10 @@
+---
+ingress:
+  name: rchain-coop-ingress
+domainName: dev-rchain.tk
+ingressClass: nginx
+certIssuer: letsencrypt-staging
+certSecret: nginx-crt
+app:
+  name: rchain-coop
+  port: 3000
