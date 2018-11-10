@@ -1,12 +1,1 @@
-{
-  "type": "service_account",
-  "project_id": "www-rchain-coop-221520",
-  "private_key_id": "7bf189efb2fb11819fec155635f6bfac294e2a48",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDxYRlV8ufeD8Du\n2DmKo64YiKwGUr/GFnrIVHcu50lGfWj1/LaWsmqkCSWQnD4teDpwTRW5IQvspWkg\nVtAaMAsKnGfytNcMWykQJeWVFdvHSJai7i4Ov28FOycXLLcfffrBywiw5STQoWlt\ndjh6fD2zAWwG/xkJ40DqeLTNXLEFWwNjphlBHuYtul8eC05jOXL9arE2CLAEelyq\nPEpoUHFM+7lqjhnCAGtjnKmYByIug/2jH5MXdQ4IdY8DcYQHRFlOaiPHlkXb91eB\nsgnjQtvzgahJictrj3lZziDTGg4hTPY3WYm+WnfEZ4pHVefWjRDxpHBHOnND2Vz7\nQg1kAr8lAgMBAAECggEAB5Ga4MYQHTdzPkoLa9x8DgrjEgOwPb7gtL1pS1A3TP2L\nuALnmswXafNbeTBdBsH5WyIfp0FxBUeeh0QRnHCbOAb1f3fKMnn9TKNTkpwv2wzc\npFlBmnbIPWrAbAqb52Hk5gS+zgUxZVVaX/NQDA8vRBisUX/YQiYdF/0W9kWMy3Ui\ni80cRgIVp61RTR0BwT9MKpj2iFTUUtpEOF/+aJ6o/5pAErYet27v4anCRRKFvW0X\naOFtKRiu1+ZE+T4Z9UQESOEC3EpXvTRjcWhFulg1vgpTS+MrELqUtpV/PPVoSNpb\neAYrl4V51siAtl8QtvwolJGkd6QqQCj4JF1tHYTu1QKBgQD78zCKMcU0PKjDOxVo\nIuwsZ2x61tP2+CcDum9JbAmtVDDz8CgRcX2NKEq3jM/G/mP2uwG+82uUsdY2EZm9\nqhhJsIsWSG3niY/6XHuh357RaZk6dt/XBBbQkNMppytivLk0jhzIfp2JpMqwx2N4\nORFSFKLmnOfcY9+ULKBYfBujiwKBgQD1QmjXy+k/HSvllLCHK13qyazZZyI0Sqnq\n25fWbeEpF+eWpJrsV0gHo+H2LQBxPnjebG9LitSJlcR8glbwrGeJ9ihVtlGZTUfE\nEbCYxTyiPSlqLwpBpyw9gZK4FI53yWb+h8WVz5zepN1ROzWyAcgKA/hQkzKWVgtv\nseindWm+DwKBgQDl3Sob6uyQjAcsl2sgZzwyBunh6L3aROzTafS+d+McUAOZizID\nOBfkAS6p575pPw7UvCkLneo470cQbV5mvBkMohVDbzFWXRsOv/HL7cloJX+2512x\nPfnSr074YZwjqSsP19hK07nHKqICRudpeCdlS46T9/NSD4ycE1r3X8OXoQKBgA66\nzlEnjfqcZeaD55Y2pI1VT2w/JW6+jTXtulDGiJ9PMDl76VIIa+sJjKicS0qB1gCF\nwqlmzRz2Qba4nUAXGqDOh92d9Yife4/rABAsyFd2FOarrJIE2ENZZNZpZaUME4N1\n5Af7UBCPFjuqsq7eLIVtd5xfOsqMoGM07CQiiRdBAoGABxK2hNy6/0q36BqboQ3Z\nayhXoYQmyu+wWDdFZvBoUDBbz7bXQmo4SvRFV5Yxyjz3BJHA4WFkV6uTdJ9hOpOn\naIJVu+RFILdiQ9OIodqGUfkUvYCC3ywzjhYUFGjQRl1pz2ZC4M4NR9oOonQByf7E\nfQQfUhI1xfQGb14e1RG7yeE=\n-----END PRIVATE KEY-----\n",
-  "client_email": "rchain-coop@www-rchain-coop-221520.iam.gserviceaccount.com",
-  "client_id": "106280852490241780764",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/rchain-coop%40www-rchain-coop-221520.iam.gserviceaccount.com"
-}
+
