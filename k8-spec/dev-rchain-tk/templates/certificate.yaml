@@ -2,17 +2,17 @@
 apiVersion: certmanager.k8s.io/v1alpha1
 kind: Certificate
 metadata:
-  name: "{{ .Values.certSecret }}"
+  name: "nginx-secret"
 spec:
-  secretName: "{{ .Values.certSecret }}"
+  secretName: "nginx-secret"
   dnsNames:
-  - "{{ .Values.domainName }}"
+  - "dev-rchain.tk"
   acme:
     config:
     - http01:
-        ingressClass: "{{ .Values.ingressClass }}"
+        ingressClass: "nginx"
       domains:
-      - "{{ .Values.domainName }}"
+      - "dev-rchain.tk"
   issuerRef:
-    name: "{{ .Values.certIssuer }}"
-    kind: Issuer
+    name: "letsencrypt-staging"
+    kind: ClusterIssuer

@@ -4,7 +4,7 @@ ingress:
 domainName: dev-rchain.tk
 ingressClass: nginx
 certIssuer: letsencrypt-staging
-certSecret: nginx-crt
+certSecret: letsencrypt-security-staging
 app:
   name: rchain-coop
   port: 3000

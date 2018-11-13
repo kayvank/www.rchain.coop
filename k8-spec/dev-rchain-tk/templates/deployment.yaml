@@ -2,32 +2,19 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: "{{ .Chart.Name }}"
+  name: "rchain-coop"
 spec:
-  revisionHistoryLimit: 1
   replicas: 1
   selector:
     matchLabels:
-      app: "{{ .Values.app.name }}"
+      app: "rchain-coop"
   template:
     metadata:
       labels:
-        app: "{{ .Values.app.name }}"
+        app: "rchain-coop"
     spec:
       containers:
-      - name: app
+      - name: "rchain-coop"
         image: kayvank/rchain.coop:1.0-dev-build-1541310982
-        imagePullPolicy: IfNotPresent
-        livenessProbe:
-          httpGet:
-            path: /
-            port: {{ .Values.app.port }}
-            scheme: HTTP
-        readinessProbe:
-          httpGet:
-            path: /
-            port: {{ .Values.app.port }}
-            scheme: HTTP
         ports:
-        - containerPort: {{ .Values.app.port }}
-          protocol: TCP
+        - containerPort: 3000

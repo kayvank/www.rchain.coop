@@ -2,20 +2,16 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: "{{ .Values.ingress.name }}"
+  name: "rchain-coop"
   annotations:
-    kubernetes.io/ingress.class: "{{ .Values.ingressClass }}"
-    certmanager.k8s.io/cluster-issuer: "{{ .Values.certIssuer }}"
+    kubernetes.io/ingress.global-static-ip-name: www-rchain-coop
+  labels:
+    app: rchain-coop
 spec:
-  tls:
-  - hosts:
-    - "{{ .Values.domainName }}"
-    secretName: "{{ .Values.certSecret }}"
   rules:
-  - host: "{{ .Values.domainName }}"
-    http:
+  - http:
       paths:
       - path: /
         backend:
-          serviceName: "{{ .Values.app.name }}"
-          servicePort: {{ .Values.app.port }}
+          serviceName: "rchain-coop"
+          servicePort: 3000
