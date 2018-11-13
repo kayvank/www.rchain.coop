@@ -5,13 +5,18 @@ metadata:
   name: "rchain-coop"
   annotations:
     kubernetes.io/ingress.global-static-ip-name: www-rchain-coop
+
   labels:
     app: rchain-coop
 spec:
+  tls:
+    - secretName: letsencrypt-staging-dev
+      hosts:
+      - rchain-coop.tk
   rules:
-  - http:
+  - host: rchain-coop.tk
+    http:
       paths:
-      - path: /
-        backend:
-          serviceName: "rchain-coop"
-          servicePort: 3000
+        - backend:
+            serviceName: "rchain-coop"
+            servicePort: 3000

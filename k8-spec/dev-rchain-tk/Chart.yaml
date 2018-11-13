@@ -1,5 +1,0 @@
----
-apiVersion: v1
-description: An example nodejs app to use for cert-manger.
-name: dev-rchain-tk
-version: 1.0.0
