@@ -1,4 +1,4 @@
-FROM node:8.12-alpine
+FROM node:10.13.0-jessie
 ENV APP_DIR /var/app
 ENV PORT 3000
 RUN mkdir -p $APP_DIR

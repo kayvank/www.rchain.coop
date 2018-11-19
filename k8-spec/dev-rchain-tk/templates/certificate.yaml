@@ -5,7 +5,7 @@ metadata:
   name: rchain-coop
   namespace: dev
 spec:
-  secretName: letsencrypt-staging-dev
+  secretName: letsencrypt-staging-tls
   commonName: rchain-coop.tk
   dnsNames:
   - www.rchain-coop.tk
@@ -15,8 +15,7 @@ spec:
         ingress: rchain-coop
         ingressClass: nginx
       domains:
-      - rchain-coop.tk
       - www.rchain-coop.tk
+      - rchain-coop.tk
   issuerRef:
-    name: letsencrypt-staging
-    kind: ClusterIssuer
+    name: rchain-coop
