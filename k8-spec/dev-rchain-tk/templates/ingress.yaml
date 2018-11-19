@@ -6,6 +6,7 @@ metadata:
   namespace: dev
   annotations:
     kubernetes.io/ingress.class: nginx
+    certmanager.k8s.io/cluster-issuer: letsencrypt-staging
   labels:
     app: rchain-coop
 spec:
@@ -13,7 +14,6 @@ spec:
     - secretName: letsencrypt-staging-tls
       hosts:
       - rchain-coop.tk
-      - www.rchain-coop.tk
   rules:
   - host: rchain-coop.tk
     http:
