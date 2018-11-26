@@ -8,5 +8,5 @@ spec:
     server: https://acme-staging-v02.api.letsencrypt.org/directory
     email: kayvan.kazeminejad@rchain.coop
     privateKeySecretRef:
-      name: letsencrypt-staging-tls
+      name: letsencrypt-staging-crt
     http01: {}
