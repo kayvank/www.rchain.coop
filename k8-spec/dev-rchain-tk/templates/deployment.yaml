@@ -2,6 +2,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
+  namespace: rchain-coop
   name: rchain-coop
 spec:
   replicas: 1
@@ -16,9 +17,5 @@ spec:
       containers:
       - name: rchain-coop
         image: kayvank/rchain.coop:1.0-dev-build-1542235952
-      # livenessProbe:
-      #   httpGet:
-      #     path: /
-      #     port: 3000
         ports:
         - containerPort: 3000
