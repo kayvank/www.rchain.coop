@@ -3,9 +3,11 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: "{{ .Values.ingress.name }}"
+  namespace: "{{ .Values.namespace }}"
   annotations:
     kubernetes.io/ingress.class: "{{ .Values.ingressClass }}"
     certmanager.k8s.io/cluster-issuer: "{{ .Values.certIssuer }}"
+    kubernetes.io/ingress.global-static-ip-name: www-rchain-coop
 spec:
   tls:
   - hosts:

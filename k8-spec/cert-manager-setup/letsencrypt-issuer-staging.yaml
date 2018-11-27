@@ -1,12 +1,12 @@
----
 apiVersion: certmanager.k8s.io/v1alpha1
-kind: ClusterIssuer
+kind: Issuer
 metadata:
   name: letsencrypt-staging
+  namespace: dev
 spec:
   acme:
-    server: https://acme-staging-v02.api.letsencrypt.org/directory
-    email: kayvan.kazeminejad@rchain.coop
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: kayvan@q2ip.com
     privateKeySecretRef:
       name: letsencrypt-staging
     http01: {}

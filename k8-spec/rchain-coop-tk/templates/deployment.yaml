@@ -3,6 +3,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: "{{ .Chart.Name }}"
+  namespace: "{{ .Values.namespace }}"
 spec:
   revisionHistoryLimit: 5
   replicas: 1

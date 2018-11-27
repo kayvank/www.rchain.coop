@@ -1,3 +1,5 @@
 ---
 ingressShim.defaultIssuerName: letsencrypt-staging
 ingressShim.defaultIssuerKind: ClusterIssuer
+set rbac.create: true
+namespace: kube-system

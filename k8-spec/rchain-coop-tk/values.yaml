@@ -1,11 +1,12 @@
 ---
 ingress:
-  name: rchain-ingress
+  name: nginx
 
 domainName: rchain-coop.tk
 ingressClass: nginx
 certIssuer: letsencrypt-staging
-certSecret: letsencrypt-staging-crt
+certSecret: letsencrypt-staging-tls
+namespace: default
 
 app:
   image: kayvank/rchain.coop:1.0-dev-build-1542235952
