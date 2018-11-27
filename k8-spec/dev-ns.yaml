@@ -2,9 +2,9 @@
   "kind": "Namespace",
   "apiVersion": "v1",
   "metadata": {
-    "name": "rchain-coop",
+    "name": "dev",
     "labels": {
-      "name": "rchain-coop"
+      "name": "dev"
     }
   }
 }

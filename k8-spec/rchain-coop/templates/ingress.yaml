@@ -3,11 +3,14 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: rchain-coop
-  namespace: rchain-coop
+  namespace: dev
   annotations:
-    kubernetes.io/ingress.class: nginx
-    certmanager.k8s.io/issuer: letsencrypt-staging
+    kubernetes.io/ingress.class: gce
+    kubernetes.io/ingress.global-static-ip-name: www-rchain-coop
 spec:
+  backend:
+    serviceName: rchain-coop
+    servicePort: 3000
   rules:
   - host: rchain-coop.tk
     http:
@@ -15,8 +18,4 @@ spec:
         - backend:
             serviceName: rchain-coop
             servicePort: 3000
-          path: /* 
-  tls:
-    - secretName: letsencrypt-staging-tls
-      hosts:
-        - rchain-coop.tk
+          path: / 
